@@ -21,7 +21,9 @@ public class NilaiAkhir {
         System.out.print("Masukkan Nilai Final : ");
         double nilai_Final = scanner.nextDouble();
 
-        double nilai_akhir =  nilai_Prak * BOBOT_PRAK  + nilai_Tugas * BOBOT_TUGAS + nilai_Mid * BOBOT_MID + nilai_Final * BOBOT_FINAL;
+        double nilai_akhir = nilai_Prak * BOBOT_PRAK + nilai_Tugas * BOBOT_TUGAS + nilai_Mid * BOBOT_MID;
+        nilai_akhir += nilai_Final * BOBOT_FINAL;
+        // menggunakan augmented assignemnet pada salah satu rumus
         //  Kurung tidak diperlukan karena operator perkalian (*) memiliki precedence lebih tinggi daripada penjumlahan (+), sehingga perkalian otomatis dihitung terlebih dahulu.
         // Hasil menjadi 78 karena semua variabel bertipe int, sehingga pembagian / 100 menghasilkan bilangan bulat dan bagian desimal terpotong.
 
@@ -39,7 +41,7 @@ public class NilaiAkhir {
         System.out.println("Dipotong (int) : " + potong);
         System.out.println("Dibulatkan (round) : " + pembulatan_Nilaiakhir);
         System.out.println("Selisih : " + selisih);
-        System.out.println("Lulus : " + lulus);
+        System.out.println("Lulus (>= 60): " + lulus);
 
         //==== NILAI AKHIR ====
         //Praktikum : 97.0 (30%)
