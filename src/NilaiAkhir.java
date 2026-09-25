@@ -23,9 +23,9 @@ public class NilaiAkhir {
 
         double nilai_akhir = nilai_Prak * BOBOT_PRAK + nilai_Tugas * BOBOT_TUGAS + nilai_Mid * BOBOT_MID;
         nilai_akhir += nilai_Final * BOBOT_FINAL;
-        // menggunakan augmented assignemnet pada salah satu rumus
+        // menggunakan augmented assignemnet pada salah satu komponen
         //  Kurung tidak diperlukan karena operator perkalian (*) memiliki precedence lebih tinggi daripada penjumlahan (+), sehingga perkalian otomatis dihitung terlebih dahulu.
-        // Hasil menjadi 78 karena semua variabel bertipe int, sehingga pembagian / 100 menghasilkan bilangan bulat dan bagian desimal terpotong.
+        // Hasil menjadi 96 karena semua variabel bertipe int, sehingga pembagian / 100 menghasilkan bilangan bulat dan bagian desimal terpotong.
 
         int potong = (int) nilai_akhir;
         int pembulatan_Nilaiakhir = (int) Math.round(nilai_akhir);
@@ -37,7 +37,7 @@ public class NilaiAkhir {
         System.out.println("Tugas : " + nilai_Tugas + " (20%)");
         System.out.println("MID : " + nilai_Mid + " (20%)");
         System.out.println("FINAL : " + nilai_Final + " (30%)");
-        System.out.println("Nilai Akhir : " + nilai_akhir);
+        System.out.println("\nNilai Akhir : " + nilai_akhir);
         System.out.println("Dipotong (int) : " + potong);
         System.out.println("Dibulatkan (round) : " + pembulatan_Nilaiakhir);
         System.out.println("Selisih : " + selisih);
