@@ -29,7 +29,12 @@ public class NilaiAkhir {
         int pembulatan_Nilaiakhir = (int) Math.round(nilai_akhir);
         double selisih = Math.abs(pembulatan_Nilaiakhir - nilai_akhir);
 
-        System.out.print("Nilai Akhir : " + nilai_akhir);
+        System.out.println("==== NILAI AKHIR ====");
+        System.out.println("Praktikum : " + nilai_Prak + " (30%)");
+        System.out.println("Tugas : " + nilai_Tugas + " (20%)");
+        System.out.println("MID : " + nilai_Mid + " (20%)");
+        System.out.println("FINAL : " + nilai_Final + " (30%)");
+        System.out.println("Nilai Akhir : " + nilai_akhir);
         System.out.print("\nDipotong : " + potong);
         System.out.print("\nDibulatkan : " + pembulatan_Nilaiakhir);
         System.out.print("\nSelisih : " + selisih);
