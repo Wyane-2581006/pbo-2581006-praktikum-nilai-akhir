@@ -28,16 +28,31 @@ public class NilaiAkhir {
         int potong = (int) nilai_akhir;
         int pembulatan_Nilaiakhir = (int) Math.round(nilai_akhir);
         double selisih = Math.abs(pembulatan_Nilaiakhir - nilai_akhir);
+        boolean lulus = nilai_akhir >= 60;
 
-        System.out.println("==== NILAI AKHIR ====");
+        System.out.println("\n==== NILAI AKHIR ====");
         System.out.println("Praktikum : " + nilai_Prak + " (30%)");
         System.out.println("Tugas : " + nilai_Tugas + " (20%)");
         System.out.println("MID : " + nilai_Mid + " (20%)");
         System.out.println("FINAL : " + nilai_Final + " (30%)");
         System.out.println("Nilai Akhir : " + nilai_akhir);
-        System.out.print("\nDipotong : " + potong);
-        System.out.print("\nDibulatkan : " + pembulatan_Nilaiakhir);
-        System.out.print("\nSelisih : " + selisih);
+        System.out.println("Dipotong (int) : " + potong);
+        System.out.println("Dibulatkan (round) : " + pembulatan_Nilaiakhir);
+        System.out.println("Selisih : " + selisih);
+        System.out.println("Lulus : " + lulus);
+
+        //==== NILAI AKHIR ====
+        //Praktikum : 97.0 (30%)
+        //Tugas : 96.0 (20%)
+        //MID : 88.0 (20%)
+        //FINAL : 100.0 (30%)
+        //Nilai Akhir : 95.9
+        //Dipotong (int) : 95
+        //Dibulatkan (round) : 96
+        //Selisih : 0.09999999999999432
+        //Lulus : true
+        //
+        //Process finished with exit code 0
 
     }
 }
